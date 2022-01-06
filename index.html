@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Survey form</title>
+</head>
+<body>
+    <div class="container">
+      <h1 class="title" id="title">Survey form</h1>
+      <p id="description">Something about you</p>
+      <div class="form-div">
+        <form class="survey-form" action="#" id="survey-form">
+          <div class="form__group">
+            <label for="name" id="name-label">Name</label><br>
+            <input class="name" id="name" type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="form__group">
+            <label for="email" id="email-label">Email</label><br>
+            <input class="email" id="email" type="email" placeholder="Enter your email"  required>
+          </div>
+          <div class="form__group">
+            <label for="age" id="number-label">Age</label><br>
+            <input class="number" type="number" id="number" name="number" min="1" max="100" placeholder="Your age">
+          </div>
+          <div class="form__group form__group--check">
+            <p>Your favourite web language</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+          </div>
+          <div class="form__group">
+            <p>Your favourite JS framework</p>
+            <select class="dropdown" id="dropdown" name="select">
+              <option value="value1">React</option>
+              <option value="value2" selected>Angular</option>
+              <option value="value3">Vue</option>
+              <option value="value4">Meteor</option>
+            </select>
+          </div>
+          <div class="form__group form__group--checkbox">
+            <p>What fruit do you like?</p>
+            <input type="checkbox" id="fruit1" name="fruit1" value="Apple">
+            <label for="fruit1"> Apple</label><br>
+            <input type="checkbox" id="fruit2" name="fruit2" value="Cherry">
+            <label for="fruit2"> Cherry</label><br>
+            <input type="checkbox" id="fruit3" name="fruit3" value="Pineapple">
+            <label for="fruit3"> Pineapple</label><br>
+            <input type="checkbox" id="fruit4" name="fruit4" value="Orange">
+            <label for="fruit4"> Orange</label><br>
+            <input type="checkbox" id="fruit5" name="fruit5" value="Apricot">
+            <label for="fruit5"> Apricot</label><br>
+            <input type="checkbox" id="fruit6" name="fruit6" value="Banana">
+            <label for="fruit6"> Banana</label>
+          </div>
+          <div class="form__group form__group--textarea">
+            <p>Some comments</p>
+            <textarea class="text-area" name="comments" id="text-area" placeholder="Your comments here">
+            </textarea>
+          </div>
+          <div class="form__group">
+            <button class="submit-btn" type="submit" id="submit"><span>Submit</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
